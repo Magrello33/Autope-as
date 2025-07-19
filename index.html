@@ -543,22 +543,19 @@
   <div class="container">
     <h2>Fale Conosco</h2>
     <form action="https://formsubmit.co/multitorques@gmail.com" method="POST">
-  <input type="hidden" name="_next" value="https://multitorques.com.br/obrigado.html">
-  <input type="hidden" name="_captcha" value="false">
-
   <input type="text" name="nome" placeholder="Seu nome" required>
-  <input type="tel" name="telefone" placeholder="WhatsApp" required>
+  <input type="text" name="whatsapp" placeholder="WhatsApp" required>
   <textarea name="mensagem" placeholder="Descreva a peça que está procurando" required></textarea>
   
+  <!-- Redireciona para a página de agradecimento -->
+  <input type="hidden" name="_next" value="https://multitorques.online/obrigado.html">
+  
+  <!-- Proteção anti-spam -->
+  <input type="hidden" name="_captcha" value="false">
+
   <button type="submit">Enviar</button>
 </form>
 
-      <!-- Proteções -->
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://multitorques.com.br/obrigado.html">
-
-      <button type="submit">Enviar</button>
-    </form>
   </div>
 
   <!-- Botão do WhatsApp -->
