@@ -462,108 +462,18 @@
 
   <section>
     <h2>Fale Conosco</h2>
-    <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>Multitorque Peças</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #111;
-      color: #fff;
-    }
+    <form onsubmit="mostrarMensagem(event)">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required />
 
-    .container {
-      max-width: 500px;
-      margin: 40px auto;
-      padding: 20px;
-      background-color: #fff;
-      color: #000;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.3);
-    }
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required />
 
-    .container h2 {
-      text-align: center;
-      color: #000;
-    }
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" name="telefone" />
 
-    label {
-      color: #f90;
-      font-weight: bold;
-      display: block;
-      margin-bottom: 5px;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 12px;
-      margin-bottom: 15px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
-      font-size: 16px;
-    }
-
-    button {
-      width: 100%;
-      background-color: #007BFF;
-      color: white;
-      border: none;
-      padding: 12px;
-      font-size: 18px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #0056b3;
-    }
-
-    /* Botão flutuante do WhatsApp */
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 1000;
-    }
-
-    .whatsapp-float img {
-      width: 60px;
-      height: 60px;
-    }
-  </style>
-</head>
-<body>
-
-  <div class="container">
-    <h2>Fale Conosco</h2>
-    <form action="https://formsubmit.co/multitorques@gmail.com" method="POST">
-  <input type="text" name="nome" placeholder="Seu nome" required>
-  <input type="text" name="whatsapp" placeholder="WhatsApp" required>
-  <textarea name="mensagem" placeholder="Descreva a peça que está procurando" required></textarea>
-  
-  <!-- Redireciona para a página de agradecimento -->
-  <input type="hidden" name="_next" value="https://multitorques.com.br/obrigado.html">
-  
-  <!-- Proteção anti-spam -->
-  <input type="hidden" name="_captcha" value="false">
-
-  <button type="submit">Enviar</button>
-</form>
-
-  </div>
-
-  <!-- Botão do WhatsApp -->
-  <a href="https://wa.me/55SEUNUMERO" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
-    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="Fale conosco no WhatsApp">
-  </a>
-
-</body>
-</html>
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+       <button type="submit">Enviar Mensagem</button
 
       <button type="
